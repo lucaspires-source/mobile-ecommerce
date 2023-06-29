@@ -10,8 +10,36 @@ const cesta = {
         farmName:"Jenny Jack Farm",
         farmLogo: logo,
         description:"Uma cesta com produtos selecionados da fazenda direto para sua cozinha",
-        price: "R$ 40,00"
-    }
+        price: "R$ 40,00",
+        button:"Comprar"
+    },
+    itens: { 
+        titulo: "Itens da cesta", 
+        lista: [ 
+          { 
+            nome: "Tomate", 
+            imagem: tomate, 
+          }, 
+          { 
+            nome: "Brócolis", 
+            imagem: brocolis, 
+          }, 
+          { 
+            nome: "Batata", 
+            imagem: batata, 
+          }, 
+          { 
+            nome: "Pepino", 
+            imagem: pepino, 
+          }, 
+          { 
+            nome: "Abóbora", 
+            imagem: abobora, 
+          } 
+        ] 
+      }
+    
+    
 }
 
 
