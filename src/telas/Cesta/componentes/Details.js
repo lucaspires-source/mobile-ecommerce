@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image } from "react-native";
+import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import Texto from "../../../components/Texto";
 
@@ -8,6 +8,7 @@ export default function Details({
   farmLogo,
   description,
   farmName,
+  button,
 }) {
   return (
     <View>
@@ -19,6 +20,9 @@ export default function Details({
 
       <Texto style={styles.description}>{description}</Texto>
       <Texto style={styles.price}>{price}</Texto>
+      <TouchableOpacity style={styles.button}>
+        <Texto style={styles.buttonText}>{button}</Texto>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -54,5 +58,19 @@ const styles = StyleSheet.create({
     lineHeight: 42,
     marginTop: 8,
     fontWeight: "bold",
+  },
+  button: {
+    marginTop:16,
+    backgroundColor:"#2a9f85",
+    paddingVertical:16,
+    borderRadius:6,
+
+  },
+  buttonText: {
+    textAlign:"center",
+    color:"#fff",
+    fontWeight:"bold",
+    fontSize:16,
+    lineHeight:26
   },
 });
