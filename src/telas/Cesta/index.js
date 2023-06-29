@@ -1,16 +1,18 @@
-import { StyleSheet, SafeAreaView, View } from "react-native";
+import { StyleSheet, SafeAreaView, View, ScrollView } from "react-native";
 
 import Top from "./componentes/Top";
 import Details from "./componentes/Details";
+import List from "./componentes/List";
 
-export default function Cesta({top, details}) {
+export default function Cesta({top, details,  items}) {
   return (
-    <SafeAreaView>
+    <ScrollView>
       <Top {...top}/>
       <View style={styles.basket}>
         <Details {...details} />
+        <List {...items} />
       </View>
-    </SafeAreaView>
+    </ScrollView>
   );
 }
 
