@@ -1,6 +1,10 @@
 
 import logo from "../../assets/logo.png";
-
+import tomato from '../../assets/tomate.png';
+import brocolis from '../../assets/brocolis.png';
+import potato from '../../assets/batata.png';
+import cucumber from '../../assets/pepino.png';
+import pumpkin from '../../assets/abobora.png';
 const cesta = {
     top: {
         title:"Detalhe de Cesta"
@@ -13,28 +17,28 @@ const cesta = {
         price: "R$ 40,00",
         button:"Comprar"
     },
-    itens: { 
-        titulo: "Itens da cesta", 
-        lista: [ 
+    items: { 
+        title: "Itens da cesta", 
+        list: [ 
           { 
-            nome: "Tomate", 
-            imagem: tomate, 
+            name: "Tomate", 
+            image: tomato, 
           }, 
           { 
-            nome: "Brócolis", 
-            imagem: brocolis, 
+            name: "Brócolis", 
+            image: brocolis, 
           }, 
           { 
-            nome: "Batata", 
-            imagem: batata, 
+            name: "Batata", 
+            image: potato, 
           }, 
           { 
-            nome: "Pepino", 
-            imagem: pepino, 
+            name: "Pepino", 
+            image: cucumber, 
           }, 
           { 
-            nome: "Abóbora", 
-            imagem: abobora, 
+            name: "Abóbora", 
+            image: pumpkin, 
           } 
         ] 
       }
