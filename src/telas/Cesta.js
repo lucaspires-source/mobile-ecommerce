@@ -12,6 +12,8 @@ import logo from "../../assets/logo.png";
 
 const width = Dimensions.get("screen").width;
 export default function Cesta() {
+
+
   return (
     <SafeAreaView>
       <Image source={top} style={styles.top} />
@@ -57,30 +59,32 @@ const styles = StyleSheet.create({
     fontSize: 16,
     padding: 16,
     color: "#FFF",
-    fontWeight: "bold",
     lineHeight: 26,
+    fontFamily:'MontserratBold',
   },
   name: {
     fontSize: 26,
     lineHeight: 42,
     color: "#464646",
-    fontWeight: "bold",
+    fontFamily:'MontserratBold',
   },
   farmName: {
     fontSize: 16,
     lineHeight: 26,
-    marginLeft:12
+    marginLeft:12,
+    fontFamily:'MontserratRegular',
   },
   description: {
     color: "#a3a3a3",
     fontSize: 16,
     lineHeight: 26,
+    fontFamily:'MontserratRegular',
   },
   price: {
     color: "#2a9f85",
-    fontWeight: "bold",
     fontSize: 26,
     lineHeight: 42,
     marginTop: 8,
+    fontFamily:'MontserratBold',
   },
 });
