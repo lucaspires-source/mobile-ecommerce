@@ -4,11 +4,11 @@ import React from 'react'
 import top from "../../../../assets/topo.png";
 import Texto from '../../../components/Texto';
 const width = Dimensions.get("screen").width;
-export default function Top(){
+export default function Top({title}){
   return (
     <View>
       <Image source={top} style={styles.topImage} />
-      <Texto style={styles.topTitle}>Detalhes da Cesta</Texto>
+      <Texto style={styles.topTitle}>{title}</Texto>
     </View>
   )
 }
